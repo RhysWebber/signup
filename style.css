@@ -8,6 +8,7 @@ body {
   height: 50vh;
   background-color: #1ABC9C;
   z-index: 0;
+  transition: height 0.15s ease-out;
 }
 
 .background {
@@ -90,17 +91,9 @@ body {
   font-size: 20px;
 }
 
-@media (max-width: 380px) {
-  .background {
+@media only screen and (max-width: 414px){
+  .ui {
     width: 100vw;
-  }
-
-  .background .ui {
-    width: 80vw;
-  }
-
-  .background .ui form input {
-    width: 70%;
-    margin-bottom: 15px;
+    height: 100vh;
   }
 }
